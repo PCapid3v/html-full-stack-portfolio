@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    min-width: 700px;
+}
+
+.header ,.intro {
+    background-color: rgb(89, 162, 138);
+    margin: 0px;
+}
+
+.header {
+    display: grid;
+    grid-template-areas: "header-left header-right";
+    grid-template-columns: 1fr repeat(auto, 80px);
+    position: sticky;
+    top: 0px;
+    border-top: 5px solid black;
+}
+
+section {
+    border-bottom: 5px solid black;
+    padding-bottom: 50px;
+}
+
+.header-left {
+    grid-area: header-left;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.header-right ul {
+    grid-area: header-right;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.about-me ul li{
+    text-align: center;
+    list-style-type: none;
+    padding: 15px;
+}
+
+
+.header-right ul li {
+    list-style-type: none;
+    place-self: baseline;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: rgb(69, 183, 145);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+h1 {
+    font-size: 40px;
+    color: rgb(211, 238, 233);
+    padding: 20px;
+    margin-top: 0px;
+    text-shadow: 2px 2px 4px darkcyan;
+
+}
+
+p {
+    font-size: 20px;   
+    width: 400px;
+    margin: 0 auto;
+}
+
+.intro p span {
+    color: black;
+    font-weight: bold;
+}
+
+.portfolio {
+    background-color: rgb(197, 38, 65);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 10px;
+    padding: 20px;
+    margin: 0 auto 50px;
+    width: 75%;
+    background-color: rgb(211, 238, 233);
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    box-sizing: border-box;    
+
+}
+
+.card {
+    border: 5px solid red;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(69, 183, 145);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    box-sizing: border-box;
+    width: fit-content;
+}
+
+footer {
+    background-color: rgb(89, 162, 138);
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    border-top: 5px solid black;
+    text-align: left;
+    width: 100%;
+}
+
+
+
+
+
